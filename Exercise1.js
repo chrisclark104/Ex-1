@@ -39,7 +39,7 @@ function onRun() {
             findSum();
             break;
         case OPERATION_PRODUCT:
-            //call product func
+            findProduct();
             break;
     }
 }
@@ -71,4 +71,11 @@ function findSum() {
         sum +=arrNumbers[index];
     }
     alert("This is the Sum of all numbers " + sum);
+}
+function findProduct(){
+    product=1;
+    for(var index=0; index<arrNumbers.length; index++){
+        product *=arrNumbers[index];
+    }
+    alert("This is the Product of all numbers " + product);
 }
